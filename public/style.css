@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-family: "Nunito", serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+    background-size: auto;
+    background-repeat: repeat;
+}

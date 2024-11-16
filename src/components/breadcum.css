@@ -1,0 +1,85 @@
+
+
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* List */
+.breadcrumb-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Item */
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Link style */
+.breadcrumb-link {
+    text-decoration: none;
+    color: #dc3545;
+    /* Màu đỏ */
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.breadcrumb-link:hover {
+    color: #bd2130;
+    /* Màu đỏ đậm hơn khi hover */
+}
+
+/* Icon style */
+.breadcrumb-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Separator giữa các item */
+.breadcrumb-separator {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* Icon của separator */
+.separator-icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    color: #6c757d;
+    /* Màu xám cho separator */
+}
+
+/* Current page */
+.breadcrumb-current {
+    color: #6c757d;
+    /* Màu xám nhạt cho trang hiện tại */
+    font-weight: 500;
+}
+
+/* Item cuối cùng không có hover */
+.breadcrumb-item.current .breadcrumb-link {
+    color: #6c757d;
+    cursor: default;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: none; /* Xóa ký tự phân cách mặc định */
+}
+
+@media (min-width: 1024px) {
+    .breadcrumb-container {
+        padding-left: -32px;
+        padding-right: -32px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
